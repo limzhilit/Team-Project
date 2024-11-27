@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used cars</title>
+    <link rel="stylesheet" href="styleused.css">
+</head>
+<body>
+    <section id="used=cars">
+        <div class="container">
+            <header class="section-header">
+                <h1>Find your dream car CHEAP!</h1>
+                <p class="subtitle">Browse a wide range of pre-owned vehicles with top features and pricing.</p>
+            </header>
+
+      
+            <div class="filters">
+                <select class="filter-drop">
+                    <option value="all">All Brands</option>
+                    <option value="BMW">BMW</option>
+                    <option value="honda">Honda</option>
+                    <option value="ford">Ford</option>
+                    <option value="chevrolet">Chevrolet</option>
+                </select>
+                <select class="filter-drop">
+                    <option value="all">Price Range</option>
+                    <option value="under-10000">Under $10,000</option>
+                    <option value="10000-20000">$10,000 - $20,000</option>
+                    <option value="over-20000">Over $20,000</option>
+                </select>
+                <select class="filter-drop">
+                    <option value="all">Mileage</option>
+                    <option value="under-10000">Under 20,000</option>
+                    <option value="10000-20000">10,000 - 80,000</option>
+                    <option value="over-20000">Over 80,000</option>
+                </select>
+                <input type="text" class="search-bar" placeholder="Search by Model">
+                <button class="search-button">Search</button>
+            </div>
+
+
+            <!--Grid-->
+            <div class="car-grid">
+
+                <!--Card-->
+                <div class="car-card">
+                    <img src="m4.jpg" alt="BMW M4" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">F82 BMW M4</h2>    
+                        <p class="car-price">$25,000</p>
+                        <p class="car-feature">Mileage: 45,000 miles</p>
+                        <p class="car-feature">Fuel type: Petrol</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('BMW M4')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('BMW M4')">Add to favorites</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="camaro.jpg" alt="Chevrolet Camaro" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2023 Camaro ZL1</h2>
+                        <p class="car-price">$45,000</p>
+                        <p class="car-feature">Mileage: 60,000 miles</p>
+                        <p class="car-feature">Fuel type: Petrol</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Chevrolet Camaro')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Chevrolet Camaro')">Add to favorites</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="mustang.jpg" alt="Ford Mustang" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2021 Ford Mustang GT</h2>
+                        <p class="car-price">$17,000</p>
+                        <p class="car-feature">Mileage: 150,000 miles</p>
+                        <p class="car-feature">Fuel type: Petrol</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Ford Mustang')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Ford Mustang')">Add to favorites</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <img src="civic.JPG" alt="Honda Civic" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2008 Honda Civic</h2>
+                        <p class="car-price">$8,000</p>
+                        <p class="car-feature">Mileage: 300,000 miles</p>
+                        <p class="car-feature">Fuel type: Diesel</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Honda Civic')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Honda Civic')">Add to favorites</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="car-card">
+                    <img src="sonata.jpg" alt="Hyundai Sonata" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2019 Hyundai Sonata</h2>
+                        <p class="car-price">$16,000</p>
+                        <p class="car-feature">Mileage: 55,000 miles</p>
+                        <p class="car-feature">Fuel Type: Hybrid</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Hyundai Sonata')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Hyundai Sonata')">Add to Favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="cx5.jpg" alt="Mazda CX-5" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2020 Mazda CX-5</h2>
+                        <p class="car-price">$19,500</p>
+                        <p class="car-feature">Mileage: 20,000 miles</p>
+                        <p class="car-feature">Fuel Type: Petrol</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Mazda CX-5')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Mazda CX-5')">Add to Favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="outback.jpg" alt="Subaru Outback" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2018 Subaru Outback</h2>
+                        <p class="car-price">$14,800</p>
+                        <p class="car-feature">Mileage: 75,000 miles</p>
+                        <p class="car-feature">Fuel Type: Diesel</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Subaru Outback')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Subaru Outback')">Add to Favorites</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="tesla.jpg" alt="Tesla Model 3" class="car-image">
+                    <div class="car-details">
+                        <h2 class="car-name">2021 Tesla Model 3</h2>
+                        <p class="car-price">$35,000</p>
+                        <p class="car-feature">Mileage: 15,000 miles</p>
+                        <p class="car-feature">Fuel Type: Electric</p>
+                        <div class="car-buttons">
+                            <button class="view-details" onclick="viewDetails('Tesla Model 3')">View Details</button>
+                            <button class="add-to-favorites" onclick="addToFavorites('Tesla Model 3')">Add to Favorites</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
