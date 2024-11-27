@@ -1,0 +1,142 @@
+body, h1, h2, p, select, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#used-cars{
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header h1{
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-drop, .search-bar, .search-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+
+.filter-drop, .search-bar {
+    flex: 1;
+}
+
+.search-button{
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.car-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.car-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.car-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.car-price {
+    font-size: 1rem;
+    color: #28a745;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.car-feature {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.car-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.view-details, .add-to-favorites {
+    flex: 1;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-details {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.view-details:hover {
+    background-color: #0056b3;
+}
+
+.add-to-favorites {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.add-to-favorites:hover {
+    background-color: #e0a800;
+}
