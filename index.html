@@ -4,28 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Sales Project</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#used-cars">Used Cars</a></li>
-            <li><a href="#electric-cars">Electric Cars</a></li>
-            <li><a href="#new-cars">New Cars</a></li>
-        </ul>
+    <nav id="nav" class="nav">
+        
+            <a href="/index.html"><img src="/images/autos-mobilis-high-resolution-logo-grayscale-transparent (1).png" width="50px"></a>
+            <a href="/usedcars.html">Used Cars</a>
+            <a href="/EV/EV.html">Electric Cars</a>
+            <a href="#new-cars">New Cars</a>
+        
     </nav>
-
+    <div id="wrapper">
+        <div id="hero">
+            <img src="/images/Designer.jpeg">
+        </div>
       <!-- Main Content -->
-      <div class="MainContent"> <h2>Explore Our Car Selection</h2>
-        <p>We offer a wide variety of cars to suit your needs. Whether you're looking for a new, used, or electric car, we have something for you!</p></div>
+        <div class="MainContent"> 
+            <h2>Explore Our Car Selection</h2>
+            <p>We offer a wide variety of cars to suit your needs. Whether you're looking for a new, used, or electric car, we have something for you!</p>
+        </div>
 
-         <!-- Car Categories -->
-         <div class="sections">
+        <!-- Car Categories -->
+        <div class="sections">
+            <!-- EV Section -->
+            <div id="ev" class="ev">
+                <div class="evcol1">
+                    <h3>Electric Vehicles</h3>
+                    <p>Customers choose our dealership for their electric vehicles due to our commitment to sustainability, cost-effective ownership, advanced technology, exceptional customer service, and tailored financing options.</p>
+                    <a href="/EV/EV.html">Learn More</a>
+                </div>
+                
+                <div class="evcol2"><img src="/images/rolls-royce-ghost-phantom-spectre-luxury-logo-glow-28-09-2024-1727565899-hd-wallpaper-2.jpg"></div>
+            </div>
             <!-- Used Cars Section -->
             <div id="used-cars" class="section">
-                <h3>Used Cars</h3>
-                <p>Explore our wide selection of reliable and affordable used cars.</p>
-                <a href="#used-cars">View Used Cars</a>
+                <div class="uccol1">
+                    <h3>Used Cars</h3>
+                    <p>Explore our wide selection of reliable and affordable used cars.</p>
+                    <a href="/usedcars.html">View Used Cars</a>
+                </div>
             </div>
+        </div>
+
+        <div id="review">
+            <h2 style="text-align: center;"> Why Choose Us? </h2>
+            #customer reviews (cards)
+        </div>
+    </div>
+    
 </body>
 </html>
