@@ -10,7 +10,7 @@ html {
 .nav {
     justify-content: center;
     display: flex;
-    background-color: black;
+    background-color: rgba(0,0,0,0.9);
     width: 100%;
     position: fixed;
     height: 45px;
