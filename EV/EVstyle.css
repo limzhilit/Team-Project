@@ -20,6 +20,7 @@ html {
     --a: #2997ff;
 }
 
+/*nav bar*/
 .nav {
     justify-content: center;
     display: flex;
@@ -52,14 +53,12 @@ html {
     visibility: hidden;
     z-index: -1;
     padding: 80px 160px;
+    margin-top: -45px;
 }
 .nav a:hover, .dropdown-content .row ul li a:hover {
     color: white; /* Change to white on hover */
     transition: color 0.2s ease; /* Optional: Smooth transition */
     z-index: 999;
-
-
-
 }
 
 .nav .dropdown:hover .dropdown-content {
@@ -73,6 +72,7 @@ html {
     text-align: left;
     background-color: black;
     left:0;
+    top:0;
     width: 100%;
     height: 400px;
     opacity: 50;
@@ -107,7 +107,20 @@ html {
     width: 20%;
 }
 
+#accessories {
+    width:40%;
+    
+    li a {font-size: 18px;
+    }
+    
+}
 
+#accessories .header {
+    font-size: 24;
+}
+    
+
+/* content */
 .body {
     margin-top:45px;
     position: absolute;
@@ -184,6 +197,101 @@ html {
 }
 }
 
+.sqcard {
+    display: flex;
+    align-items: flex-start;
+    flex: 1
+
+}
+
+.content2  {
+    width: 50vw;
+    height: 55vh; /* Set the image height to 100% of the viewport height */
+    object-fit: cover; /* Ensure the image covers the area and crops the sides if necessary */
+    object-position: center; 
+
+
+}
+
+.calculator {
+    background-color: beige;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+    margin: 10px;
+    margin-right: 5px;
+    color: rgb(17, 61, 61);
+    font-size: 16px;
+    align-items: center;
+    height: 100%;
+
+}
 
 
 
+.crow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+label {
+    margin-right: 20px;
+}
+.calculator input, button {
+    border-radius: 90px;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+ button {
+    width: 150px;
+    text-align: center;
+    background-color: rgb(17, 61, 61);
+    color: white;
+
+}
+
+input {
+    background-color: white;
+    width: 150px;
+    text-align: center;
+    color: rgb(17, 61, 61);
+    &:focus {
+        outline: none;
+      }
+
+}
+
+.tradein {
+    margin: 10px;
+    margin-left: 5px;
+    background-color: beige;
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    color: rgb(17, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        padding: 50px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: rgb(17, 61, 61);
+    }
+    
+    img {
+        width:300px;
+        padding-top: 50px;
+    }
+    button {
+        width: 200px;
+    }
+}
