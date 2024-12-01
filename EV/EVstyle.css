@@ -200,13 +200,14 @@ html {
 .sqcard {
     display: flex;
     align-items: flex-start;
-    flex: 1
+    flex: 1;
+    margin-bottom:110px ;
 
 }
 
 .content2  {
     width: 50vw;
-    height: 55vh; /* Set the image height to 100% of the viewport height */
+    height: 60vh; /* Set the image height to 100% of the viewport height */
     object-fit: cover; /* Ensure the image covers the area and crops the sides if necessary */
     object-position: center; 
 
@@ -234,6 +235,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 16px;
 
 
 }
@@ -252,7 +254,7 @@ label {
  button {
     width: 150px;
     text-align: center;
-    background-color: rgb(17, 61, 61);
+    background-color: #01FF70;
     color: white;
 
 }
@@ -268,6 +270,10 @@ input {
 
 }
 
+.money {
+    color: #01FF70;
+}
+
 .tradein {
     margin: 10px;
     margin-left: 5px;
@@ -279,9 +285,10 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     p {
-        padding: 50px;
+        padding: 10%;
         padding-top: 10px;
         padding-bottom: 20px;
         color: rgb(17, 61, 61);
@@ -293,5 +300,69 @@ input {
     }
     button {
         width: 200px;
+    }
+}
+
+.warrenty {
+    background-color: beige;
+  
+    margin: 10px;
+    margin-right: 5px;
+    color: rgb(17, 61, 61);
+    font-size: 16px;
+    height: 100%;
+
+
+
+    background-color: beige;
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    color: rgb(17, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        padding: 10%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: rgb(17, 61, 61);
+    }
+    
+    img {
+        width:400px;
+        padding-top: 50px;
+    }
+    
+}
+
+.insurance {
+    margin: 10px;
+    margin-left: 5px;
+    background-color: beige;
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    color: rgb(17, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        padding: 10%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: rgb(17, 61, 61);
+    }
+    
+    img {
+        width:300px;
+        padding-top: 50px;
+    }
+    button {
+        width: 150px;
     }
 }
