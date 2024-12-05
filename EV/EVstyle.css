@@ -3,6 +3,7 @@ html {
     font-family: "Inter", sans-serif;
     background-color: black;
 
+
 }
 
 * {
@@ -364,5 +365,41 @@ input {
     }
     button {
         width: 150px;
+    }
+}
+
+.reviewTrack {
+    margin-top: 120px;
+    height: 195px;
+    margin-bottom: 10px;
+    width: 100vw;  /* Full width */
+    display: flex;  /* Arrange reviews in a row */
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    pointer-events: none;  /* Disable mouse interaction */
+
+
+}
+
+.review {
+    background-color: white;
+    width: 350px;  /* Fixed width for each review card */
+    padding: 35px;
+    margin-right: 10px;
+    flex-shrink: 0;  /* Prevent shrinking */
+    animation: scrollReviews 50s linear infinite;  /* Apply the scrolling animation */
+
+}
+
+.review h3 {
+    margin-bottom: 10px;
+}
+
+/* Keyframe animation to scroll the reviews */
+@keyframes scrollReviews {
+    0% {
+        transform: translateX(0);  /* Start at the original position */
+    }
+    100% {
+        transform: translateX(-4300px );  /* Move left by the width of one review */
     }
 }
