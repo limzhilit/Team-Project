@@ -45,3 +45,5 @@ function computeLoan() {
     document.getElementById("totalCost").textContent = results.totalCost;
     document.getElementById("results").style.display = "block";
 }
+
+
