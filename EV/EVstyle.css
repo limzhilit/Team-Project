@@ -9,6 +9,7 @@ html {
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 :root{
@@ -368,17 +369,48 @@ input {
     }
 }
 
-.reviewTrack {
-    margin-top: 120px;
+
+.pictrack {
+    margin-top: 115px;
+    margin-bottom: 5px;
+    display: flex;
+    height: 675px;
+    width: 100vw;
+    overflow-x: auto;
+
+    img {
+        margin:5px;
+        height: 660px;
+        flex-shrink: 0;
+    }
+}
+
+
+
+
+/*review*/
+.reviewTrackWrapper {
     height: 195px;
     margin-bottom: 10px;
     width: 100vw;  /* Full width */
-    display: flex;  /* Arrange reviews in a row */
     overflow-x: auto;  /* Allow horizontal scrolling */
-    pointer-events: none;  /* Disable mouse interaction */
 
 
 }
+
+.reviewTrack {
+    width: fit-content;  /* Full width */
+
+    display: flex;  /* Arrange reviews in a row */
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    animation: scrollReviews 50s linear infinite;  /* Apply the scrolling animation */
+
+    &:hover {
+        animation: scrollReviews 100s linear infinite;  /* Apply the scrolling animation */
+
+    }
+}
+
 
 .review {
     background-color: white;
@@ -386,8 +418,7 @@ input {
     padding: 35px;
     margin-right: 10px;
     flex-shrink: 0;  /* Prevent shrinking */
-    animation: scrollReviews 50s linear infinite;  /* Apply the scrolling animation */
-
+    
 }
 
 .review h3 {
