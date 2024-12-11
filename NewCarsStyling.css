@@ -44,7 +44,6 @@ body {
     color: #007bff;
   }
   
-  /* Filter Section */
   .filters {
     padding: 15px 20px;
     background-color: #f4f4f9;
@@ -105,12 +104,13 @@ body {
     width: 300px;
     padding: 15px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .car img {
     width: 100%;
     border-radius: 8px;
+    transition: transform 0.3s ease;
   }
   
   .car h3 {
@@ -135,7 +135,15 @@ body {
   .car button:hover {
     background: #0056b3;
   }
+
+  .car:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
   
+  .car img:hover {
+    transform: scale(1.1);
+  }
 
   footer {
     text-align: center;
