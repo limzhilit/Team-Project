@@ -1,0 +1,140 @@
+
+html {
+    font-family: "Inter", sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav {
+    justify-content: center;
+    display: flex;
+    background-color: rgba(0,0,0,0.9);
+    width: 100%;
+    position: fixed;
+    height: 45px;
+    top: 0;  /* Keeps it at the top of the screen */
+    z-index: 1000;  /* Ensures it sits above other content */
+
+}
+
+.nav a {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color:white;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 12px;
+    border-radius: 90px;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);  /* Slight background change on hover */
+    transition: background-color 0.3s ease;  /* Smooth transition */
+}
+
+
+
+#hero {
+    margin-top:45px;
+    text-align: center;
+}
+#hero img {
+    width: 100%
+}
+.MainContent {
+    padding: 20px;
+    text-align: center;
+    background-color: beige;
+    color: rgb(121, 45, 12);
+}
+.MainContent p{
+    color: rgb(72, 24, 3);
+
+}
+
+#ev {
+    padding: 40px, 0px;
+    background-color: black;
+    color: white;
+    height:400px;
+    flex-direction: row;
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: stretch; /* Vertically center the items */
+    justify-content: space-between; /* Space between text and image */
+}
+.ev h3{
+    color: yellow;
+    font-size: 50px;
+}
+.evcol1{
+    padding:80px;
+}
+.ev p {
+    width:90%;
+}
+.ev a {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(15, 39, 57);
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 20px;
+    width: 150px;
+    text-align: center;
+    margin:40px;
+    margin-left: 0px;
+    border-radius: 90px;
+    color:rgb(68, 188, 188);
+    
+
+}
+
+.evcol2{
+    height:400px;
+}
+
+.ev .evcol2 img{
+    height: 400px;
+    width: auto;
+    right:0;
+    object-fit: cover;
+    align-items: center; /* Vertically center the image */
+
+}
+
+#used-cars{
+    background-color: rgb(7, 94, 104);
+}
+.uccol1{
+    padding:80px;
+}
+
+.uccol1 h3{
+    color: rgb(255, 111, 0);
+    font-size: 50px;
+}
+
+.uccol1 p{
+    color: rgb(255, 255, 255);
+    width:90%;
+}
+
+.uccol1 a {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(15, 39, 57);
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 20px;
+    width: 200px;
+    text-align: center;
+    margin:40px;
+    margin-left: 0px;
+    border-radius: 90px;
+    color:rgb(68, 188, 188);
+
+}
