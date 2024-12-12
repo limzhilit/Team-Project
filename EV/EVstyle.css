@@ -9,6 +9,7 @@ html {
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 :root{
@@ -19,6 +20,7 @@ html {
     --text: #1d1d1f;
     --blue: #0071e3;
     --a: #2997ff;
+    --darkgreen: rgb(17, 61, 61);
 }
 
 /*nav bar*/
@@ -90,8 +92,8 @@ html {
     font-weight: 200;
     display: block;
     background-color: none;
-    line-height: 30px;
-    font-size: 30px;
+    line-height: 28px;
+    font-size: 28px;
     color: var(--greyLight);
 }
 .dropdown-content .row ul li .header{
@@ -109,16 +111,10 @@ html {
 }
 
 #accessories {
-    width:40%;
-    
-    li a {font-size: 18px;
-    }
-    
+    width:100%;
+
 }
 
-#accessories .header {
-    font-size: 24;
-}
     
 
 /* content */
@@ -228,16 +224,13 @@ html {
     align-items: center;
     height: 100%;
 
-}
-
-
-
-.crow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 16px;
-
+    .crow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 16px;
+    }
+    
 
 }
 
@@ -252,11 +245,16 @@ label {
     font-size: 16px;
 }
 
- button {
+button {
     width: 150px;
     text-align: center;
     background-color: #01FF70;
     color: white;
+
+    &:hover {
+        background-color: #00ac4a;
+
+    }
 
 }
 
@@ -271,9 +269,6 @@ input {
 
 }
 
-.money {
-    color: #01FF70;
-}
 
 .tradein {
     margin: 10px;
@@ -368,26 +363,300 @@ input {
     }
 }
 
-.reviewTrack {
-    margin-top: 120px;
-    height: 195px;
-    margin-bottom: 10px;
-    width: 100vw;  /* Full width */
-    display: flex;  /* Arrange reviews in a row */
-    overflow-x: auto;  /* Allow horizontal scrolling */
-    pointer-events: none;  /* Disable mouse interaction */
+.contact {
+    background-color: beige;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+    margin: 10px;
+    margin-right: 5px;
+    color: rgb(17, 61, 61);
+    font-size: 16px;
+    align-items: center;
+    height: 100%; 
+    text-align: center; 
+
+    input, button {
+        border-radius: 90px;
+        border: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .erow {
+        line-height: 16px;
+        
+    }
+
+    input {
+        width:300px;
+        text-align: left;
+        padding: 20px;
+    }
+
+    #message {
+        height:150px;
+        border-radius: 30px;
+        align-items: start;
+        border: none;
+        font-family: "Inter";
+        font-size: 16px;
+        width:300px;
+        padding: 20px;
+
+    }
+}
+
+
+
+
+.batd{
+    margin: 10px;
+    margin-left: 5px;
+    background-color: beige;
+    padding: 50px;
+    text-align: center;
+    height: 100%;
+    color: rgb(17, 61, 61);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    button {
+        width: 100px;
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+.calander {
+    display: flex;
+    height: 300px;
+    width: 420px;
+    flex-wrap: wrap;
+    margin:30px;
+    .day {
+        display: flex;
+        width:50px;
+        height:50px;
+        border-radius: 90px;
+        color: rgb(17, 61, 61);
+        background-color:#01FF70;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .date {
+        display: flex;
+        width:50px;
+        height:50px;
+        border-radius: 90px;
+        color: #f5f5f7;
+        background-color:  rgb(17, 61, 61);
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        
+        &:hover {
+            color:#01FF70;
+        }
+    }
 
 
 }
 
+
+#month {
+    border: none;
+    font-size: 32px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: -20px;
+    background-color:rgba(0,0,0,0);
+    color: var(--darkgreen) ;
+}
+
+.pictrackwrapper {
+    width: 100vw;
+    overflow-x: hidden;  /* Allow horizontal scrolling */
+    display: flex;
+    justify-content: center;
+
+
+}
+.pictrack {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    height: 675px;
+    width: fit-content;
+    animation: slideInOut 15s infinite;
+    transition: transform 1s ease; /* Apply transition to the transform property */
+
+    img {
+        margin:5px;
+        height: 660px;
+        flex-shrink: 0;
+    }
+}
+
+@keyframes slideInOut {
+    0% {
+      opacity: 1;
+      transform: translateX(1760px); /* Start off-screen to the right */
+    }
+    33.33% {
+      opacity: 1;
+      transform: translateX(600px); 
+    }
+    66.66% {
+      opacity: 1;
+      transform: translateX(-580px); /* Stay in view */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-1760px);
+    }
+  }
+
+
+.control {
+    height:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.controlKnob {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin-left:30px;
+    margin-right:30px;
+    border-radius: 90px;
+}
+
+#control1 {
+    animation: colorchange1 15s infinite;
+    transition: transform 1s ease; /* Apply transition to the transform property */
+
+}
+
+@keyframes colorchange1 {
+    0% {
+      opacity: 1;
+    }
+    16.665% {
+        opacity: 0.3;
+      }
+    33.33% {
+      opacity: 0.3;
+    }
+    66.66% {
+      opacity: 0.3;
+    }
+    83.335% {
+        opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #control2 {
+    animation: colorchange2 15s infinite;
+    transition: transform 1s ease; /* Apply transition to the transform property */
+
+}
+
+@keyframes colorchange2 {
+    0% {
+      opacity: 0.3;
+    }
+    16.665% {
+        opacity: 1;
+      }
+    33.33% {
+      opacity: 1;
+    }
+    49.995% {
+        opacity: 0.3;
+      }
+    66.66% {
+      opacity: 0.3;
+    }
+    83.335% {
+        opacity: 0.3;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  #control3 {
+    animation: colorchange3 15s infinite;
+    transition: transform 1s ease; /* Apply transition to the transform property */
+
+}
+
+@keyframes colorchange3 {
+    0% {
+      opacity: 0.3;
+    }
+    16.665% {
+        opacity: 0.3;
+      }
+    33.33% {
+      opacity: 0.3;
+    }
+    49.995% {
+        opacity: 1;
+      }
+    66.66% {
+      opacity: 1;
+    }
+    83.335% {
+        opacity: 0.3;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+/*review*/
+.reviewTrackWrapper {
+    height: 195px;
+    margin-bottom: 10px;
+    width: 100vw;  /* Full width */
+    overflow-x: hidden;  /* Allow horizontal scrolling */
+margin-bottom: 50px;
+
+}
+
+.reviewTrack {
+    width: fit-content;  /* Full width */
+    display: flex;  /* Arrange reviews in a row */
+    overflow-x: auto;  /* Allow horizontal scrolling */
+    animation: scrollReviews 50s linear infinite;  /* Apply the scrolling animation */
+}
+
+.reviewTrack:hover {
+    animation-play-state: paused; /* Pause the animation when hovered */
+}
+
+
+
 .review {
     background-color: white;
     width: 350px;  /* Fixed width for each review card */
-    padding: 35px;
+    padding: 30px;
     margin-right: 10px;
     flex-shrink: 0;  /* Prevent shrinking */
-    animation: scrollReviews 50s linear infinite;  /* Apply the scrolling animation */
-
+    
 }
 
 .review h3 {
@@ -402,4 +671,51 @@ input {
     100% {
         transform: translateX(-4300px );  /* Move left by the width of one review */
     }
+}
+
+
+
+.tandc {
+    background-color: #1d1d1f;
+    width:100vw;
+    color: #d6d6d6;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-top:30px;
+    font-weight: 300;
+
+    hr {
+        height: 0.1px;
+        border: none;
+        color: #d6d6d6;
+        background-color: #d6d6d6;
+
+    }
+}
+
+.tcwrapper {
+    width:900px;
+}
+
+.linkswrapper {
+    height:200px;
+    display: flex;
+    flex-wrap: wrap;
+    columns: 5;
+    flex-direction: column;
+
+    h4 {
+        color: white;
+        padding-bottom: 5px;
+    }
+}
+.links ul{
+    list-style: none;
+
+
+}
+
+.links ul li:hover {
+    text-decoration: underline;
 }

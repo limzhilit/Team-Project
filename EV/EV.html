@@ -160,23 +160,23 @@
         </div>
         <div class="content">
             <img src="/images/tesla.png">
-            <a href="/EV/EV.html" class="lm">Learn More</a>
-            <a href="/EV/EV.html" class="td">Test Drive</a>
+            <a href="https://www.tesla.com/en_ie/" class="lm">Learn More</a>
+            <a href="#batd" class="td">Test Drive</a>
         </div>
         <div class="content">
             <img src="/images/toyota.png">
-            <a href="/EV/EV.html" class="lm">Learn More</a>
-            <a href="/EV/EV.html" class="td">Test Drive</a>
+            <a href="https://www.toyota.ie/" class="lm">Learn More</a>
+            <a href="#batd" class="td">Test Drive</a>
         </div>
         <div class="content">
             <img src="/images/lucid.png">
-            <a href="/EV/EV.html" class="lm">Learn More</a>
-            <a href="/EV/EV.html" class="td">Test Drive</a>
+            <a href="https://lucidmotors.com/" class="lm">Learn More</a>
+            <a href="#batd" class="td">Test Drive</a>
         </div>
         <div class="content">
             <img src="/images/byd.png">
-            <a href="/EV/EV.html" class="lm">Learn More</a>
-            <a href="/EV/EV.html" class="td">Test Drive</a>
+            <a href="https://www.byd.com/ie" class="lm">Learn More</a>
+            <a href="#batd" class="td">Test Drive</a>
         </div>
 
         <div class="sqcard">
@@ -233,6 +233,7 @@
                     <h2>Warrenty</h2>
                     <p> Drive confidently with our comprehensive 8-year warranty, covering key mechanical and electrical components for long-term peace of mind!</p>
                     <img src="/images/warrenty.png">
+                    
                 </div>
                 <!-- End of warrenty div-->
             </div>
@@ -248,8 +249,116 @@
             
         </div>
 
+        <div class="sqcard">
+            <div class="content2">
+                <div class="contact">
+                    <h2>Contact US</h2>
+                    <p> Phone: 1-800-Autos-Mobilis</p>
+                    <div class="emailform">
+                        <div class="erow">
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="erow">
+                            <input type="text" id="email" placeholder="Email">
+                        </div>
+                        <div class="erow">
+                            <textarea id="message" placeholder="Message"></textarea>
+                        </div>
+                        <button onclick="clearform()" style="width: 80px;;">Send</button>
 
+                    </div>
+                </div>
+
+                <script>
+                    function clearform(){
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                    }
+                </script>
+                <!-- End of contact div-->
+            </div>
+
+            <div class="content2">
+                <div class="batd" id="batd">
+                    <h2>Book a Test Drive</h2>
+                    <select name="month" id="month"> 
+                        <option value="Jan">January</option> 
+                        <option value="Feb">February</option>
+                        <option value="Mar">March</option>
+                        <option value="Apr">April</option>
+                        <option value="May">May</option>
+                        <option value="Jun">June</option>
+                        <option value="Jul">July</option>
+                        <option value="Aug">August</option>
+                        <option value="Sep">September</option>
+                        <option value="Oct">October</option>
+                        <option value="Nov">November</option>
+                        <option value="Dec">December</option>
+                      </select>
+                      
+                    <div class="calander">
+                        <span class="day">Mon</span>
+                        <span class="day">Tue</span>
+                        <span class="day">Wed</span>
+                        <span class="day">Thu</span>
+                        <span class="day">Fri</span>
+                        <span class="day">Sat</span>
+                        <span class="day">Sun</span>                                                
+                        <span class="date">1</span>
+                        <span class="date">2</span>
+                        <span class="date">3</span>
+                        <span class="date">4</span>
+                        <span class="date">5</span>
+                        <span class="date">6</span>
+                        <span class="date">7</span>
+                        <span class="date">8</span>
+                        <span class="date">9</span>
+                        <span class="date">10</span>
+                        <span class="date">11</span>
+                        <span class="date">12</span>
+                        <span class="date">13</span>
+                        <span class="date">14</span>
+                        <span class="date">15</span>
+                        <span class="date">16</span>
+                        <span class="date">17</span>
+                        <span class="date">18</span>
+                        <span class="date">19</span>
+                        <span class="date">20</span>
+                        <span class="date">21</span>
+                        <span class="date">22</span>
+                        <span class="date">23</span>
+                        <span class="date">24</span>
+                        <span class="date">25</span>
+                        <span class="date">26</span>
+                        <span class="date">27</span>
+                        <span class="date">28</span>
+                        <span class="date">29</span>
+                        <span class="date">30</span>
+                        <span class="date">31</span>
+                    </div>
+                    <button onclick="">Book Now</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="pictrackwrapper">
+            <div id="picTrack" class="pictrack">
+                <div class="pic"><img src="/images/service.png"></div>
+                <div class="pic"><img src="/images/autoshow.png"></div>
+                <div class="pic"><img src="/images/carclub.png"></div>
+                <div class="pic"><img src="/images/service.png"></div>
+                <div class="pic"><img src="/images/autoshow.png"></div>
+                <div class="pic"><img src="/images/carclub.png"></div>
+            </div>
+        </div>
+        <div class="control">
+            <div id="control1" class="controlKnob" onclick="slide1()"></div>
+            <div id="control2" class="controlKnob" onclick="slide2()"></div>
+            <div id="control3" class="controlKnob" onclick="slide3()"></div>
+        </div>
         <!-- Review -->
+         <div class="reviewTrackWrapper">
          <div class="reviewTrack">
             <div class="review">
                 <h3>John M. <br>⭐⭐⭐⭐⭐</h3>
@@ -372,6 +481,139 @@
                 </p>
             </div>
          </div>
+        </div>
+
+        <div class="tandc">
+            <div class="tcwrapper">
+                <p>
+                    Certified Pre-Owned (CPO) vehicles undergo a rigorous multi-point inspection to ensure quality and reliability. Inspection criteria may vary based on manufacturer guidelines. Warranty coverage, when provided, applies to specific components for a defined period. Roadside assistance may be included with select CPO vehicles, subject to the terms of the program. For detailed warranty information, refer to the documentation provided with the purchase of the CPO vehicle.
+                    <br><br>
+                    Trade-in values are determined based on the vehicle’s condition, mileage, year, and market demand. Not all vehicles qualify for trade-in credit. Trade-in values may be applied toward the purchase of a new or pre-owned vehicle or offered as dealership credit. A valid government-issued ID is required for all trade-ins. Certain restrictions apply, and terms may vary between online and in-store trade-in programs. The dealership reserves the right to refuse or adjust trade-in offers at its discretion. Additional details are available from our trade-in partner.
+                    <br><br>
+
+                    Financing is available to qualified applicants and is subject to credit approval by participating lenders. Eligibility criteria, interest rates, and loan terms depend on creditworthiness, vehicle selection, and lender policies. Financing options may vary and are only available for qualifying applicants. Additional terms and conditions may apply. Contact our financing team for more details.
+                    <br><br>
+
+                    Test drives are available upon request and require a valid driver’s license. Test drive availability is subject to local regulations and vehicle inventory. Certain restrictions may apply, including limitations on distance or duration. Please inquire with the dealership for specific test drive terms.
+                    <br><br>
+
+                    Optional extended warranties and maintenance plans are available for purchase on select vehicles. Terms, conditions, and exclusions apply and may vary by plan and vehicle type. Routine maintenance services are performed by certified technicians using manufacturer-approved parts to ensure the highest standards of care.
+                    <br><br>
+
+                    Certain features, services, and offers may not be available in all regions. Availability is determined by local laws, dealership capabilities, and program terms. Please contact your local dealership for details about regional availability and eligibility.
+                    <br><br>
+
+                    Terms and conditions are subject to change without notice. For questions about warranty details, trade-in restrictions, financing options, or other policies, visit our website or contact the dealership directly. Warranty information, trade-in requirements, and financing terms are provided at the time of purchase.
+                    <br><br>
+                    <hr>
+                    <br>
+
+                </p>
+
+                <div class="linkswrapper">
+                    <div class="links">
+                        <h4>Shop and Explore</h4>
+                        <ul>
+                            <li>Electric Cars</li>
+                            <li>SUVs</li>
+                            <li>Sedans</li>
+                            <li>Coupes</li>
+                            <li>Convertibles</li>
+                            <li>Trucks</li>
+                            <li>Luxury Vehicles</li>
+                            <li>Commercial Vehicles</li>
+                        </ul>
+                        <br>
+                    </div>
+                    <div class="links">
+                        <h4>Car Accessories</h4>
+                        <ul>
+                            <li>Car Care Products</li>
+                            <li>Performance Parts</li>
+                            <li>Audio Systems</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="links">
+                        <h4>Financing</h4>
+                        <ul>
+                            <li>Loan Options</li>
+                            <li>Lease Plans</li>
+                            <li>Trade-In Value</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="links">
+                        <h4>For Owners</h4>
+                        <ul>
+                            <li>Schedule Service</li>
+                            <li>Maintenance Tips</li>
+                            <li>Owner’s Manuals</li>
+                            <li>Warranty Information</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="links">
+                        <h4>Connected Features</h4>
+                        <ul>
+                            <li>In-Car Navigation</li>
+                            <li>Entertainment Systems</li>
+                            <li>Safety Features</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="links">
+                        <h4>Explore More</h4>
+                        <ul>
+                            <li>Test Drive</li>
+                            <li>Locate a Dealer</li>
+                            <li>Special Offers</li>
+                            <li>Certified Pre-Owned Cars</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    <div class="links">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li>Our Mission</li>
+                            <li>Meet the Team</li>
+                            <li>Sustainability Practices</li>
+                            <li>Investor Relations</li>
+                        </ul>
+                        <br>
+                    </div>
+
+                    
+                    <div class="links">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li>Customer Support</li>
+                            <li>Careers</li>
+                            <li>Press Inquiries</li>
+                        </ul>
+                        <br>
+                    </div>
+                </div>
+
+                <p>
+                    More ways to shop: Find an Autos Mobilis Dealership or other retailer near you. Or call 1-800-Autos-Mobilis.
+                    <br><br>
+                    <hr>
+                    <br>
+                    Copyright © 2024 Autos Mobilis Inc. All rights reserved.    <br>
+                    Privacy Policy | Terms of Use | Sales and Refunds | Legal Site Map
+                    <br>
+                    <br>
+                    <br>
+                </p>
+
+            </div>
+        </div>
 
 
         
