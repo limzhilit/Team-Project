@@ -7,10 +7,26 @@
     <link rel="stylesheet" href="styleused.css">
 </head>
 <body>
+    <header>
+        <div class="logo">
+          <h1> Used Cars </h1>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="usedcars.html">Old Cars</a></li>
+            <li><a href="#NewCars.html">New Cars</a></li>
+            <li><a href="electriccars.html">Electric Cars</a></li>
+          </ul>
+        </nav>
+      </header>
+       
     <section id="used=cars">
         <div class="container">
             <header class="section-header">
-                <h1>Find your dream car CHEAP!</h1>
+            </div>
+            </nav>
+               
                 <p class="subtitle">Browse a wide range of pre-owned vehicles with top features and pricing.</p>
             </header>
 
@@ -52,8 +68,8 @@
                         <p class="car-feature">Mileage: 45,000 miles</p>
                         <p class="car-feature">Fuel type: Petrol</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('BMW M4')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('BMW M4')">Add to favorites</button>
+                            <button class="view-details" data-car-id="8">View Details</button>
+                            <button class="add-to-favorites" data-car-id="8">Add to favorites</button>
                         </div>
                     </div>
                 </div>
@@ -66,8 +82,8 @@
                         <p class="car-feature">Mileage: 60,000 miles</p>
                         <p class="car-feature">Fuel type: Petrol</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Chevrolet Camaro')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Chevrolet Camaro')">Add to favorites</button>
+                            <button class="view-details" data-car-id="7">View Details</button>
+                            <button class="add-to-favorites" data-car-id="7">Add to favorites</button>
                         </div>
                     </div>
                 </div>
@@ -80,8 +96,8 @@
                         <p class="car-feature">Mileage: 150,000 miles</p>
                         <p class="car-feature">Fuel type: Petrol</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Ford Mustang')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Ford Mustang')">Add to favorites</button>
+                            <button class="view-details" data-car-id="6">View Details</button>
+                            <button class="add-to-favorites" data-car-id="6">Add to favorites</button>
                         </div>
                     </div>
                 </div>
@@ -94,8 +110,8 @@
                         <p class="car-feature">Mileage: 300,000 miles</p>
                         <p class="car-feature">Fuel type: Diesel</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Honda Civic')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Honda Civic')">Add to favorites</button>
+                            <button class="view-details" data-car-id="5">View Details</button>
+                            <button class="add-to-favorites" data-car-id="5">Add to favorites</button>
                         </div>
                     </div>
                 </div>
@@ -108,8 +124,8 @@
                         <p class="car-feature">Mileage: 55,000 miles</p>
                         <p class="car-feature">Fuel Type: Hybrid</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Hyundai Sonata')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Hyundai Sonata')">Add to Favorites</button>
+                            <button class="view-details"data-car-id="4">View Details</button>
+                            <button class="add-to-favorites" data-car-id="4">Add to Favorites</button>
                         </div>
                     </div>
                 </div>
@@ -121,8 +137,8 @@
                         <p class="car-feature">Mileage: 20,000 miles</p>
                         <p class="car-feature">Fuel Type: Petrol</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Mazda CX-5')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Mazda CX-5')">Add to Favorites</button>
+                            <button class="view-details" data-car-id="3">View Details</button>
+                            <button class="add-to-favorites" data-car-id="3">Add to Favorites</button>
                         </div>
                     </div>
                 </div>
@@ -134,8 +150,8 @@
                         <p class="car-feature">Mileage: 75,000 miles</p>
                         <p class="car-feature">Fuel Type: Diesel</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Subaru Outback')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Subaru Outback')">Add to Favorites</button>
+                            <button class="view-details" data-car-id="2">View Details</button>
+                            <button class="add-to-favorites" data-car-id="2">Add to Favorites</button>
                         </div>
                     </div>
                 </div>
@@ -147,8 +163,8 @@
                         <p class="car-feature">Mileage: 15,000 miles</p>
                         <p class="car-feature">Fuel Type: Electric</p>
                         <div class="car-buttons">
-                            <button class="view-details" onclick="viewDetails('Tesla Model 3')">View Details</button>
-                            <button class="add-to-favorites" onclick="addToFavorites('Tesla Model 3')">Add to Favorites</button>
+                            <button class="view-details" data-car-id="1">View Details</button>
+                            <button class="add-to-favorites" data-car-id="1">Add to Favorites</button>
                         </div>
                     </div>
                 </div>
@@ -160,5 +176,7 @@
             </div>
         </div>
     </section>
+    <script src="usedjava.js"></script>
+</body>
 </body>
 </html>

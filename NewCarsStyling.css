@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav .nav-links li {
+    display: inline;
+  }
+  
+  nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  .filters {
+    padding: 15px 20px;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .filters form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filters .dropdown {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .filters button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .car {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .car img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .car h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  
+  .car p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+  
+  .car button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .car button:hover {
+    background: #0056b3;
+  }
+
+  .car:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .car img:hover {
+    transform: scale(1.1);
+  }
+
+  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
