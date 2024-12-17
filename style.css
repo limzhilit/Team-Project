@@ -103,6 +103,7 @@ html {
     right:0;
     object-fit: cover;
     align-items: center; /* Vertically center the image */
+    overflow: hidden;
 
 }
 
